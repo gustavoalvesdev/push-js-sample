@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Push Notifications</title>
+</head>
+<body>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
+
+    <script>
+
+        Push.create('Olá, Mundo!', {
+            body: 'Este é o corpo da notificação',
+            icon: 'favicon.png',
+            timeout: 6000,
+            vibrate: [100, 100, 100],
+            onClick: function() {
+                window.location.href = 'https://gustavoalvesdev.com.br'
+            }
+        })
+
+    </script>
+
+</body>
+</html>
